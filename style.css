@@ -158,7 +158,7 @@ nav ul li {
   position: absolute;
   transform: rotate(-10deg);
   left: 20%;
-  top: 0%;
+  top: 10%;
 }
 
 .folder-UI .folders .folder-bottom .project-images div img {
@@ -169,14 +169,14 @@ nav ul li {
 
 .folder-UI .folders .folder-bottom .project-images div:nth-child(1) {
   background-color: pink;
-  top: 0%;
+  top: 10%;
   left: 58%;
   transform: rotate(10deg);
 }
 
 .folder-UI .folders .folder-bottom .project-images div:nth-child(2) {
   background-color: black;
-  top: -19%;
+  top: 10%;
   left: 40%;
   transform: rotate(0deg);
 }
