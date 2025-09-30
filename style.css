@@ -5,6 +5,10 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 :root {
   --folder-yellow-color: #ffe430;
   --folder-light-gray-color: #d9d9d9;
@@ -71,6 +75,7 @@ nav ul li {
   min-width: 48rem;
   position: absolute;
   border-top-left-radius: 0.4rem;
+  gap: -1;
 }
 
 .folder {
@@ -81,12 +86,12 @@ nav ul li {
 
 .folder-UI .folders.folder-2,
 .folder-UI .folders.folder-5 {
-  top: 25%;
+  top: -5%;
 }
 
 .folder-UI .folders.folder-3,
 .folder-UI .folders.folder-6 {
-  top: 50%;
+  top: -50%;
   z-index: 3;
 }
 
@@ -154,19 +159,21 @@ nav ul li {
 }
 
 .folder-UI .project-images div {
-  width: 11rem;
-  height: 11rem;
+  width: 13rem;
+  height: 13rem;
   background-color: blue;
   position: absolute;
-  transform: rotate(-10deg);
-  left: 20%;
+  left: 40%;
   top: 100%;
   z-index: -1;
+  /* display: none; */
 }
 
 .folder-UI .project-images div img {
   width: 176px;
   height: 193;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -174,12 +181,10 @@ nav ul li {
   background-color: pink;
   top: 100%;
   left: 58%;
-  transform: rotate(10deg);
 }
 
 .folder-UI .project-images div:nth-child(2) {
   background-color: black;
   top: 100%;
-  left: 40%;
-  transform: rotate(0deg);
+  left: 20%;
 }
