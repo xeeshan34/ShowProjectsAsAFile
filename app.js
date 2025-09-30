@@ -1,14 +1,33 @@
 const folder = document.querySelector(".folder");
 
 folder.addEventListener("mouseover", () => {
-  const image0 = document.querySelector(".image-0");
-  const image1 = document.querySelector(".image-1");
-  const image2 = document.querySelector(".image-2");
+  gsap.to(".image-0", {
+    y: "-48%",
+    ease: "easeOut",
+  });
 
-  const randomNum = Math.floor(Math.random() * 5 + 1);
-  console.log(randomNum);
+  gsap.to(".image-1", {
+    y: "-40%",
+    ease: "easeOut",
+  });
+  gsap.to(".image-2", {
+    y: "-42%",
+    ease: "easeOut",
+  });
+});
 
-  image0 = style.top = "0%";
-  image1 = style.top = "0%";
-  image2 = style.top = "-19%";
+folder.addEventListener("mouseout", () => {
+  gsap.to(".image-0", {
+    y: "-10%",
+    ease: "easeInOut",
+  });
+
+  gsap.to(".image-1", {
+    y: "-10%",
+    ease: "easeInOut",
+  });
+  gsap.to(".image-2", {
+    y: "-10%",
+    ease: "easeInOut",
+  });
 });
