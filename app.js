@@ -65,9 +65,7 @@ folders.forEach((folder) => {
   const image1 = folder.querySelector(".image-1");
   const image2 = folder.querySelector(".image-2");
 
-  // Hover (show + animate)
   folderBottom.addEventListener("mouseover", () => {
-    // Show images first
     image0.style.display = "flex";
     image1.style.display = "flex";
     image2.style.display = "flex";
@@ -94,7 +92,6 @@ folders.forEach((folder) => {
     });
   });
 
-  // Mouse leave (animate back + hide after animation)
   folder.addEventListener("mouseout", () => {
     gsap.to([image0, image1, image2], {
       y: "10%",
